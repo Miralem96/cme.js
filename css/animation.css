@@ -1,0 +1,22 @@
+/* Hover Animation */
+
+.list-item::after{
+    content: "";
+    height: 2px;
+    width: 0%;
+    background-color: white;
+    display: block;
+    transition: .5s ease-in-out;
+}
+
+.list-item:hover::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    display: block;
+}
+
+.btn:hover{
+    background-color: rgb(66, 61, 61);
+}
