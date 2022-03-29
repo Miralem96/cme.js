@@ -14,7 +14,7 @@
             </div>
             <ul class="nav-list">
                 <li class="list-item"><a href="" class="a-list">home</a></li>
-                <li class="list-item"><a href="" class="a-list">tour dates</a></li>
+                <li class="list-item"><a href="#tour-dates" class="a-list">tour dates</a></li>
                 <li class="list-item"><a href="" class="a-list">buy ticket</a></li>
                 <li class="list-item"><a href="" class="a-list">music</a></li>
                 <li class="list-item"><a href="" class="a-list">bio</a></li>
@@ -24,14 +24,34 @@
     </header>
 
     <section id="main-content">
-        <div class="content">
-            <h1 class="content-headline">DJ idriZ - World Tour</h1>
-        </div>
-        <div class="content-btn">
-            <button class="btn">check tour dates</button>
+        <div class="main-container">
+            <div class="content">
+                <h1 class="content-headline">DJ idriZ - World Tour This Summer</h1>
+            </div>
+            <form class="content-btn" action="#tour-dates">
+                <button class="btn" type="submit" >check tour dates</button>
+            </form>
+        </div>   
+    </section>
+
+    <section id="tour-dates">
+        <div class="tour-container">
+            <div class="dates">
+                <h2 class="tour-headline">world tour dates</h2>
+                <p class="tour-txt">June 25 - Hï Ibiza - Spain</p>
+                <p class="tour-txt">June 29 - Omnnia - USA</p>
+                <p class="tour-txt">July 15 - KAOS - USA</p>
+                <p class="tour-txt">July 28 - Tomorrowland - Belgien</p>
+                <form class="buy-btn" action="#t">
+                    <button class="btn-buy-ticket" type="submit" >buy ticket now</button>
+                </form>
+            </div>
+            <div class="img-tourmap">
+                <!-- <img src="/img/worldmap.jpg" alt="worldmap" class="map-img"> -->
+            </div>
         </div>
     </section>
 
-
+    <script type="module" src="/js/app.js"></script>
 </body>
 </html>
