@@ -13,6 +13,7 @@
 
 body{
     background-color: var(--main-bg-color);
+    margin: 0;
 }
 
 a{
@@ -29,6 +30,8 @@ ul{
     background-color: var(--main-bg-color);
     height: 120px;
     width: 100%;
+    position: fixed;
+    top: 0;
 }
 
 .main-nav{
@@ -68,6 +71,8 @@ ul{
     background-size: cover;                 
     background-repeat:  no-repeat;
     background-position: center center;
+    position: static;
+    margin-top: 70px;
 }
 
 .main-container{
@@ -83,6 +88,7 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .content-btn{
@@ -92,6 +98,7 @@ ul{
     justify-content: center;
     height: 9%;
     width: 100%;
+    margin-top: 10px;
 }
 
 .btn{
@@ -119,6 +126,7 @@ ul{
     width: 100%;
     height: 100%;
     display: flex;
+    
 }
 
 .dates{
@@ -167,4 +175,330 @@ ul{
     text-transform: uppercase;
     background-color: transparent;
     transition: background-color .5s;
+}
+
+
+.hamburger{
+    display: none;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all .3s ease-in-out;
+    background-color: white;
+}
+
+
+/* Screen For Mobile */
+
+
+.hamburger{
+    display: none;
+    position: fixed;
+    left: 345px;
+}
+
+
+
+/* Section Three */
+
+#music{
+    height: 500px;
+    width: 100%;
+}
+
+.music-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.music-social{
+    width: 25%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px auto;
+}
+
+.font-icon{
+    font-size: 2.5rem;
+}
+
+.music-p{
+    font-size: 2rem;
+}
+
+.music-headline{
+    font-size: 2rem;
+}
+
+/* Section Four */
+
+#bio{
+    width: 100%;
+    height: 1000px;
+}
+
+.bio-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bio-card{
+    background-image: url(/img/idriz.jpg);
+    width: 25%;
+    height: 70%;
+    background-size: cover;                 
+    background-repeat:  no-repeat;
+    background-position: center center;
+    box-shadow: rgb(71, 72, 73) 0px 5px 30px -10px;
+    border-radius: 3%;
+}
+
+.idriz{
+    height: 95%;
+    width: 95%;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    font-size: 2.5rem;
+    padding-bottom: 25px;
+}
+
+
+.bio-idriz{
+    height: 200px;
+    width: 25%;
+    margin-top: 25px;
+    padding: 0 15px;
+    text-align: center;
+    line-height: 2.5;
+    font-size: 1.3rem;
+}
+
+
+/* Foooter */
+
+#footer{
+    background-color: rgba(39, 39, 39, 0.527);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-box{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copy{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.media-menu{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-list{
+    font-size: 1.2rem;
+    padding: 0 20px;
+}
+
+
+
+/* Iphone X - etc  */
+
+@media screen and (max-width: 375px){
+
+
+
+    .main-nav{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .nav-list{
+        background-color: var(--main-bg-color);
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        transition: .4s;
+    }
+
+    #main-content{
+        margin-top: 110px;
+    }
+
+    .list-item{
+        padding-top: 25px;
+        padding-right: 50px;
+        padding-bottom: 20px;
+    }
+
+
+    .logo{
+        width: 120px;
+    }
+
+
+    .tour-container{
+        margin-top: 170px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .img-tourmap{
+        display: none;
+    }
+    
+    .tour-headline{
+        padding-top: 15px;
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-headline{
+        font-size: 1.9rem;
+    }
+
+    .content-btn{
+        margin-top: 10px;
+    }
+
+
+    /* hamburger */
+
+    .hamburger{
+        display: block;
+    }
+
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-list.active{
+        display: block;
+        left: 0%;
+    }
+
+    /* Music */
+
+    #music{
+        margin-top: 195px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .music-social{
+        height: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .font-icon{
+        padding: 10px;
+    }
+
+    .bio-card{
+        width: 100%;
+    }
+    
+    .bio-idriz{
+        width: 100%;
+        line-height: 1.2;
+    }
+
+    /* Footer */
+
+    #footer{
+        width: 100%;
+        height: 450px;
+    }
+
+    .footer-box{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .media-menu{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .media-list{
+        padding: 20px auto;
+        width: 60px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .copy{
+        padding-left: 15px;
+        width: 100%;
+    }
+
+    .follow{
+        width: 60%;
+        display: flex;
+        justify-content: center;
+    }
+
 }

@@ -3,23 +3,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/31fe92b6e6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/home.css">
-    <title>Document</title>
+    <title>Djidriz</title>
 </head>
 <body>
     <header id="header">
         <nav class="main-nav">
             <div class="logo-img">
-                <img src="/img/logo.jpg" alt="" class="logo">
+                <a href="#main-content"><img src="/img/logo.jpg" alt="" class="logo"></a>
             </div>
             <ul class="nav-list">
-                <li class="list-item"><a href="" class="a-list">home</a></li>
+                <li class="list-item"><a href="#main-content" class="a-list">home</a></li>
                 <li class="list-item"><a href="#tour-dates" class="a-list">tour dates</a></li>
+                <li class="list-item"><a href="#music" class="a-list">music</a></li>
+                <li class="list-item"><a href="#bio" class="a-list">bio</a></li>
                 <li class="list-item"><a href="" class="a-list">buy ticket</a></li>
-                <li class="list-item"><a href="" class="a-list">music</a></li>
-                <li class="list-item"><a href="" class="a-list">bio</a></li>
-                <li class="list-item"><a href="" class="a-list">merch</a></li>
+                <li class="list-item"><a href="https://www.google.com/" class="a-list">merch</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
 
@@ -41,9 +47,9 @@
                 <p class="tour-txt">June 25 - Hï Ibiza - Spain</p>
                 <p class="tour-txt">June 29 - Omnnia - USA</p>
                 <p class="tour-txt">July 15 - KAOS - USA</p>
-                <p class="tour-txt">July 28 - Tomorrowland - Belgien</p>
+                <p class="tour-txt">July 28 - Tomorrowland - Belgium</p>
                 <form class="buy-btn" action="#t">
-                    <button class="btn-buy-ticket" type="submit" >buy ticket now</button>
+                    <button class="btn-buy-ticket" type="submit" >buy ticket</button>
                 </form>
             </div>
             <div class="img-tourmap">
@@ -52,6 +58,49 @@
         </div>
     </section>
 
-    <script type="module" src="/js/app.js"></script>
+    <section id="music">
+        <div class="music-container">
+            <h3 class="music-headline">DJ idriZ First Album Release</h3>
+            <div class="music-logo">
+                <img src="/img/logo.jpg" alt="" class="m-logo">
+            </div>
+            <div class="music-social">
+                <p class="music-p">Visit</p>
+                <a href="https://soundcloud.com/"><i class="fa fa-soundcloud font-icon"></i></a>
+                <a href="https://www.spotify.com/"><i class="fa fa-spotify font-icon"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="bio">
+        <div class="bio-container">
+            <div class="bio-card">
+                <h4 class="idriz">idriZ</h4>
+            </div>
+            <div class="bio-idriz">
+                <p class="bio-txt">DJ idriZ path from celebrated DJ to dominating the global house music scene has been on a constant,
+                     upward trajectory leading to become the World toppling No.1 DJ</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <p class="copy">©2022 by Miralem Idriz</p>
+                <ul class="media-menu">
+                    <p class="follow">Follow IdriZ On</p>
+                    <li class="media-list"><a href=""><i class="fa fa-facebook"></i></a></li>
+                    <li class="media-list"><a href=""><i class="fa fa-instagram"></i></a></li>
+                    <li class="media-list"><a href=""><i class="fa fa-twitter"></i></li></a>
+                    <li class="media-list"><a href=""><i class="fa fa-youtube"></i></li></a>
+                    <li class="media-list"><a href=""><i class="fa fa-soundcloud"></i></li></a>
+                    <li class="media-list"><a href=""><i class="fa fa-spotify"></i></li></a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/app.js"></script>
 </body>
 </html>
