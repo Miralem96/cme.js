@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/ticket.css">
+    <title>Ticket</title>
+</head>
+<body>
+    <header id="header">
+        <nav class="nav-menu">
+            <a href="/index.html"><img src="/img/logo.jpg" alt="logo" class="logo"></a>
+            <a href="/index.html" class="home">home</a>
+        </nav>
+    </header>
+
+    <!-- Popup Card When Click Buy Button -->
+    <div class="popup-card">
+        <!-- <div class="card">
+            <h2 class="heading-card">thanks for purchase</h2>
+            <p class="email-input">Email :</p>
+            <p class="ticket-number">Ticket Number :</p>
+            <p class="ticket-city">Ticket :</p>
+            <div class="btn-card">
+                <button class="btn-done">done</button>
+            </div>
+            </div>   -->
+    </div>
+
+    <section id="form-content">
+        <form class="ticket-form">
+            <h1 class="heading">ticket</h1>
+            <p class="txt">Card Holder Name</p>
+            <input type="text" class="input name" placeholder="Name">
+            
+            <p class="txt">Credit Card Number</p>
+            <input type="text" class="input" placeholder="Card Number" >
+
+            <p class="txt-expiration-date">Expiration date</p>
+            <div class="expiration-date">
+                <input type="text" class="input e-d" placeholder="Day">
+                <input type="text" class="input e-d" placeholder="Year">
+            </div>
+
+            <p class="txt">CVV</p>
+            <input type="text" class="input" placeholder="CVV">
+
+            <div class="choose-ticket">
+            <label for="ticket">Choose ticket :</label>
+            <select name="ticket" id="ticket">
+                <option value="" disabled selected hidden>Choose Ticket</option>
+                <option value="06/25 - HI Ibiza $60">06/25 - HI Ibiza $60</option>
+                <option value="06/29 - Omnia $60">06/29 - Omnia $60</option>
+                <option value="07/15 - KAOS $60">07/15 - KAOS $60</option>
+                <option value="07/28 - Tomorrowland $100">07/28 - Tomorrowland $100</option>
+            </select>
+            </div>
+
+            <p class="txt">Email</p>
+            <input type="text" class="input email" placeholder="Email">
+
+            <div class="btn-ticket">
+                <button class="btn-buy">buy ticket</button>
+            </div>
+        </form>
+    </section>
+
+    <script type="module" src="/app.js"></script>
+</body>
+</html>
