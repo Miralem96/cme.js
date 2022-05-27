@@ -136,10 +136,12 @@ input{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .heading-card{
     text-transform: uppercase;
+    text-align: center;
 }
 
 .email-input{
